@@ -2,7 +2,7 @@
 PREEMPT_RT latency measurements in Linux kernels (4.4, 4.9, 4.14, 4.19) and distributions (Ubuntu, Arch Linux, and Debian) running on RPi and BeagleBone
 The slave devices under test (RaspberryPi and BeagleBone) are connected to, and communicate with, another Raspberry (master) that performs the actual measurements. Measurements include the latency of response tasks in user and kernel space, the response at specific periodic rates on execution of periodic tasks in user and kernel space, the maximum sustained frequency, min, max, std.deviation and variance.
 
-Installation (mainly for RPis): 
+# Installation RPi-BeagleBone Installation (mainly for RPis): 
 
 Install the software source files found respectively in master and slave folders into the master and slave device respectively.
 
