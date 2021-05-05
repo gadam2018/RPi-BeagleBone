@@ -13,7 +13,11 @@ For user space periodic task measurements: in the master COMPILE: gcc gpiop_mast
 For kernel space periodic task measurements: in the master COMPILE: gcc kgpiop_master.c -o kgpiop_master -lm -lrt
 
 Usage: 
+
 Response task measurements at user space Run the slave first, then the master to perform the measurements. in the slave device run: sudo ./gpio_master in the master device run: RUN: sudo ./gpio_slave
+
 Response task measurements at kernel space: Run the slave first, then the master to perform the measurements. in the slave device run: make and sudo insmod kgpio4_slave.ko in the master device run: RUN: sudo ./gpio_slave
+
 Periodic task measurements at user space: in the slave device run: sudo chrt -f 99 ./gpiop_slave in the master device run: sudo chrt -f 99 ./gpiop1_master
+
 Periodic task measurements at kernel space: in the slave device run: make and sudo insmod kgpiop2.ko in the master device run: sudo chrt -f 99 ./kgpiop_master 
