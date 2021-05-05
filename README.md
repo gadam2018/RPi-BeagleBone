@@ -2,7 +2,7 @@
 PREEMPT_RT latency measurements in Linux kernels (4.4, 4.9, 4.14, 4.19) and distributions (Ubuntu, Arch Linux, and Debian) running on RPi and BeagleBone
 The slave devices under test (RaspberryPi and BeagleBone) are connected to, and communicate with, another Raspberry (master) that performs the actual measurements. Measurements include the latency of response tasks in user and kernel space, the response at specific periodic rates on execution of periodic tasks in user and kernel space, the maximum sustained frequency, min, max, std.deviation and variance.
 
-# Installation RPi-BeagleBone Installation (mainly for RPis): 
+# Installation (mainly for RPis): 
 
 Install the software source files found respectively in master and slave folders into the master and slave device respectively.
 
@@ -12,7 +12,7 @@ For user space periodic task measurements: in the master COMPILE: gcc gpiop_mast
 
 For kernel space periodic task measurements: in the master COMPILE: gcc kgpiop_master.c -o kgpiop_master -lm -lrt
 
-Usage: 
+# Usage: 
 
 Response task measurements at user space Run the slave first, then the master to perform the measurements. in the slave device run: sudo ./gpio_master in the master device run: RUN: sudo ./gpio_slave
 
