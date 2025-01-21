@@ -4,6 +4,8 @@ The slave devices under test (RaspberryPi and BeagleBone) are connected to, and 
 
 Adam, G.K. Real-Time Performance and Response Latency Measurements of Linux Kernels on Single-Board Computers. Computers 2021, 10, 64. https://doi.org/10.3390/computers10050064 
 
+Adam, G.K.; Petrellis, N.; Doulos, L.T. Performance Assessment of Linux Kernels with PREEMPT_RT on ARM-Based Embedded Devices. Electronics 2021, 10, 1331. https://doi.org/10.3390/electronics10111331 
+
 # Installation (mainly for RPis): 
 
 Install the software source files found respectively in master and slave folders into the master and slave device respectively.
